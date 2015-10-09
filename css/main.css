@@ -1,1 +1,72 @@
 /* Your stylesheet goes here */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic");
+body {
+	font: Lato;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+h1{
+	font: Raleway, Helvetica Neue, Helvetica, san-serif;
+}
+h2{
+	color : #BC6026;
+}
+
+svg{
+	height: 1em;
+	margin-left: 15px; <-- ?
+}
+
+nav{
+	background-color: #181C22;
+	color: white;
+	font-size: 16px;
+}
+
+nav->li{
+	display: inline;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+/*
+
+nav->li hover{
+
+	change li
+	color:#D87E28;
+	change svg too
+}
+*/
+
+
+
+
+nav->a{
+	padding: 0.5em;
+}
+
+
+/*pixels 768 =< wide */
+body {
+	font-size: 20px
+}
+
+h2{
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+nav{
+	background-color: rgba(24, 28, 34, 0.8);
+}
+
+nav->a{
+	padding-left: 1em;
+	padding-right: 1em;
+}
