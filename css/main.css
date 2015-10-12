@@ -1,72 +1,149 @@
-/* Your stylesheet goes here */
+/* main.scss */
+/* end of globals */
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic");
 body {
-	font: Lato;
-	font-size: 16px;
-	font-weight: 300;
-	background-color: #E9EAEE;
-}
+  font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #E9EAEE; }
 
-h1{
-	font: Raleway, Helvetica Neue, Helvetica, san-serif;
-}
-h2{
-	color : #BC6026;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, Helvetica Neue, Helvetica, sans-serif; }
 
-svg{
-	height: 1em;
-	margin-left: 15px; <-- ?
-}
+h2 {
+  color: #BC6026; }
 
-nav{
-	background-color: #181C22;
-	color: white;
-	font-size: 16px;
-}
+svg {
+  height: 1em;
+  fill: currentColor; }
 
-nav->li{
-	display: inline;
-	font-variant: small-caps;
-	text-decoration: none;
-}
+/* <nav style begin> */
+nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #181C22;
+  font-size: 16px;
+  color: white; }
 
-/*
+nav > ul {
+  padding-left: 0px;
+  margin-left: 15px;
+  margin-top: 15px; }
 
-nav->li hover{
+ul > li {
+  display: inline; }
 
-	change li
-	color:#D87E28;
-	change svg too
-}
-*/
+li > a {
+  /*nav bar links */
+  color: white;
+  padding: 0.5em;
+  font-variant: small-caps;
+  text-decoration: none;
+  display: inline; }
 
+li > a:hover {
+  /*nav bar links behavior*/
+  text-decoration: none;
+  color: #D87E28; }
 
+li > a:focus {
+  /*nav bar links behavior*/
+  text-decoration: none; }
 
+/* </nav style end> */
+/* <header style begin> */
+.motto, #svg {
+  display: none; }
 
-nav->a{
-	padding: 0.5em;
-}
+/* </header style end> */
+/* <headline style begin> */
+.headline {
+  font-style: italic; }
 
+/* </headline style end> */
+/* <info style begin> */
+#info {
+  background-color: #dbdce3; }
 
-/*pixels 768 =< wide */
-body {
-	font-size: 20px
-}
+.map {
+  border-radius: 5px; }
 
-h2{
-	text-align: center;
-	padding-bottom: 1em;
-}
+.text-center {
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
-nav{
-	background-color: rgba(24, 28, 34, 0.8);
-}
+/* </info style end> */
+dd {
+  padding-left: 1em; }
 
-nav->a{
-	padding-left: 1em;
-	padding-right: 1em;
-}
+#story {
+  background-color: #dbdce3; }
+
+#storyPic {
+  float: right;
+  border-radius: 5px;
+  margin-left: 5px;
+  height: 300px; }
+
+footer {
+  border-top: 3px solid;
+  border-color: #D87E28;
+  background-color: #afb3c2;
+  padding-top: 1em;
+  float: clear; }
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px; }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1em; }
+
+  .navbar {
+    background-color: rgba(24, 28, 34, 0.8);
+    border-radius: 0px;
+    margin-bottom: 0px; }
+
+  #banner {
+    background-image: url("../img/background-sm.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: right;
+    height: 550px; }
+
+  .motto, #svg {
+    display: inherit; }
+
+  #svg {
+    height: 1.5em;
+    margin-bottom: 1em;
+    color: #BC6026; }
+
+  .headline {
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em; }
+
+  .col-sm-9 {
+    text-align: right; } }
+@media screen and (min-width: 769px) {
+  #storyPic {
+    height: 400px; } }
+@media screen and (min-width: 992px) {
+  #banner {
+    background-image: url("../img/background-md.jpg"); }
+
+  h1 {
+    font-size: 4em; } }
+@media screen and (min-width: 1200px) {
+  #banner {
+    background-image: url("../img/background-lg.jpg");
+    height: 750px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,188 @@
+/* main.scss */
+
+$fallbackStack: Helvetica Neue, Helvetica,sans-serif ;
+$navSmallColor : #181C22;
+$navWideColor : rgba(24, 28, 34, 0.8);
+$h2Color: #BC6026;
+$bodyBackgroudColor: #E9EAEE;
+$navTextColor: white ;
+$hoverColor : #D87E28;
+$infoBackground : #dbdce3;
+$footerColor : #afb3c2;
+
+/* end of globals */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic");
+
+body{
+	font-family:Lato,$fallbackStack;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: $bodyBackgroudColor;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Raleway,$fallbackStack;
+}
+h2{
+	color : $h2Color;
+
+}
+svg{
+	height: 1em;
+	fill: currentColor;
+}
+
+/* <nav style begin> */
+nav{
+	position: fixed;
+	left: 0px;
+	top:0px;
+	background-color: $navSmallColor;
+	font-size: 16px;
+	color: $navTextColor;
+}
+nav>ul{
+	padding-left: 0px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+ul > li{ 
+	display: inline;
+}
+li > a{ /*nav bar links */
+	color: $navTextColor;
+	padding: 0.5em;
+	font-variant: small-caps;
+	text-decoration: none;
+	display: inline;
+}
+li > a:hover{ /*nav bar links behavior*/
+	text-decoration: none;
+	color:$hoverColor;
+}
+
+li > a:focus{ /*nav bar links behavior*/
+	text-decoration: none;
+}
+/* </nav style end> */
+
+
+/* <header style begin> */
+.motto,#svg{
+	display: none;
+}
+/* </header style end> */
+
+
+/* <headline style begin> */
+.headline{
+		font-style: italic;
+}
+/* </headline style end> */
+
+/* <info style begin> */
+#info{
+	background-color: $infoBackground;
+}
+.map{
+	border-radius: 5px;
+}
+.text-center{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+/* </info style end> */
+
+dd{
+	padding-left: 1em;
+}
+
+#story{
+	background-color: $infoBackground;
+}
+#storyPic{
+	float: right;
+	border-radius: 5px;
+	margin-left: 5px;
+	height: 300px;
+}
+
+footer{
+	border-top: 3px solid;
+	border-color: $hoverColor;
+	background-color: $footerColor;
+	padding-top: 1em;
+	float: clear;
+}
+
+@media screen and (min-width: 768px){
+	body {
+		font-size: 20px;
+	}
+
+	h2{
+		text-align: center;
+		margin-bottom: 1em;	
+	}
+	.navbar{
+		background-color:$navWideColor;
+		border-radius: 0px;
+		margin-bottom: 0px;
+	}
+	#banner{
+		background-image: url('../img/background-sm.jpg');
+		background-repeat: no-repeat;
+		color: $navTextColor;
+		text-align: right;
+		height: 550px;
+	}
+
+	.motto,#svg{
+		display: inherit;
+	}
+
+	#svg{
+		height: 1.5em;
+		margin-bottom: 1em;
+		color : $h2Color;
+	}
+
+	.headline{
+		font-size: 1.25em;
+		text-align: center;
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
+	.col-sm-9{
+		text-align: right;
+	}
+	
+
+}
+@media screen and (min-width: 769px){
+	#storyPic{
+		height: 400px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	#banner{
+		background-image: url('../img/background-md.jpg');
+	}
+	h1{
+		font-size:4em;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+	#banner{
+		background-image: url('../img/background-lg.jpg');
+		height: 750px;
+	}
+}
