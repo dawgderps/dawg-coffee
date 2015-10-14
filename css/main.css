@@ -67,7 +67,7 @@ li > a:focus {
 /* </headline style end> */
 /* <info style begin> */
 #info {
-  background-color: #dbdce3; }
+  background-color: darken #E9EAEE, 5; }
 
 .map {
   border-radius: 5px; }
@@ -81,7 +81,7 @@ dd {
   padding-left: 1em; }
 
 #story {
-  background-color: #dbdce3; }
+  background-color: darken #E9EAEE, 5%; }
 
 #storyPic {
   float: right;
@@ -92,7 +92,7 @@ dd {
 footer {
   border-top: 3px solid;
   border-color: #D87E28;
-  background-color: #afb3c2;
+  background-color: darken #E9EAEE, 20;
   padding-top: 1em;
   float: clear; }
 

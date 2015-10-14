@@ -86,7 +86,7 @@ li > a:focus{ /*nav bar links behavior*/
 
 /* <info style begin> */
 #info{
-	background-color: $infoBackground;
+	background-color: darken ($bodyBackgroudColor ,5);
 }
 .map{
 	border-radius: 5px;
@@ -102,7 +102,7 @@ dd{
 }
 
 #story{
-	background-color: $infoBackground;
+	background-color: darken ($bodyBackgroudColor ,5%);;
 }
 #storyPic{
 	float: right;
@@ -114,7 +114,7 @@ dd{
 footer{
 	border-top: 3px solid;
 	border-color: $hoverColor;
-	background-color: $footerColor;
+	background-color: darken ($bodyBackgroudColor ,20);
 	padding-top: 1em;
 	float: clear;
 }

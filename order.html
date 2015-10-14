@@ -10,7 +10,7 @@
       <link rel="stylesheet"  href="css/main.css">
       <link rel="icon" href="img/page-icon.png">
       <script>
-         function fade(px) {
+         var fade = function(px) {
              var filter = 'brightness('+(100 - px / 25)+'%) blur('+(px/25)+'px)';
              var elem = document.getElementById('banner');
              elem.style.webkitFilter = filter;       //for Chrome
@@ -35,12 +35,12 @@
             <li><a href="order.html">ORDER</a></li>
          </ul>
       </nav>
-      <div id="banner">
+      <section id="banner">
          <div class = "container">
             <h1>Dawg Coffee <br>Orders</h1>
             <p class="motto" >Caffeinating Sleepy Huskies Since 2015</p>
          </div>
-      </div>
+      </section>
       <div class = "container">
          <p>Comming soon..</p>
       </div>
